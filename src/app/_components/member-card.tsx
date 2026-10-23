@@ -331,7 +331,11 @@ export const MemberCard = ({ member, variant = 'faculty' }: { member: FacultyMem
                   alt={member.name}
                   fill
                   className="object-cover object-center"
-                  style={{ objectPosition: member.imagePosition ?? 'center' }}
+                  style={{
+                    objectPosition: member.imagePosition ?? 'center',
+                    transform: member.imageScale ? `scale(${member.imageScale})` : undefined,
+                    transformOrigin: member.imageTransformOrigin ?? 'center',
+                  }}
                   sizes="72px"
                   onError={() => setImageFailed(true)}
                 />

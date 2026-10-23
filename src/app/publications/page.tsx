@@ -93,8 +93,8 @@ const PublicationsSection = () => {
               Research Publications
             </h1>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Explore our contributions to mathematical finance, featuring groundbreaking research 
-              in stochastic analysis, financial mathematics, and computational methods.
+              Discover how our research advances mathematical finance through new ideas in
+              stochastic analysis, financial mathematics, and computational methods.
             </p>
           </div>
         </div>

@@ -1,12 +1,11 @@
-import { MemberCard } from "./member-card";
 import { pastMembersData } from "@/contents/past-members";
 
 const PastMembers = () => {
   return (
-    <section className="py-20 border-t border-gray-200/70" id="past-members">
+    <section className="border-t border-gray-200/70 py-16" id="past-members">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+        <div className="mx-auto mb-10 max-w-3xl text-center">
+          <h2 className="mb-4 text-4xl font-bold text-gray-900 dark:text-white">
             Past Members
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300">
@@ -15,11 +14,36 @@ const PastMembers = () => {
         </div>
 
         {pastMembersData.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {pastMembersData.map((member) => (
-              <MemberCard key={member.name} member={member} variant="student" />
-            ))}
-          </div>
+          <ul className="mx-auto grid max-w-5xl list-disc gap-x-12 gap-y-5 pl-6 marker:text-brand md:grid-cols-2">
+            {pastMembersData.map((member) => {
+              const profileUrl =
+                member.links.website ??
+                member.links.linkedin ??
+                member.links.googleScholar;
+
+              return (
+                <li key={member.name} className="pl-1">
+                  {profileUrl ? (
+                    <a
+                      href={profileUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors hover:text-brand hover:decoration-brand dark:text-white"
+                    >
+                      {member.name}
+                    </a>
+                  ) : (
+                    <span className="font-semibold text-gray-900 dark:text-white">
+                      {member.name}
+                    </span>
+                  )}
+                  <p className="mt-1 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                    {member.title}
+                  </p>
+                </li>
+              );
+            })}
+          </ul>
         )}
       </div>
     </section>

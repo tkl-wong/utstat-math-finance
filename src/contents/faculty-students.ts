@@ -14,7 +14,7 @@ export const facultyStudentsData: FacultyMember[] = [
     name: "Vedant Choudhary",
     title: "PhD student (Sebastian Jaimungal)",
     since: 2021,
-    image: "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=QF2q72kAAAAJ&citpid=1",
+    image: "/utstat-math-finance/assets/members/VedantChoudhary.jpg",
     bio: "Generative modelling of financial time series data.",
     links: {
       email: "vedant.choudhary@mail.utoronto.ca",
@@ -23,10 +23,23 @@ export const facultyStudentsData: FacultyMember[] = [
     },
   },
   {
+    name: "Xuchen Wu",
+    title: "PhD student (Sebastian Jaimungal)",
+    since: 2021,
+    image: "/utstat-math-finance/assets/members/XuchenWu.jpg",
+    imageScale: 5,
+    imageTransformOrigin: "12% 0%",
+    bio: "Partial-information leader-follower games and algorithmic trading.",
+    links: {
+      email: "xuchen.wu@mail.utoronto.ca",
+      linkedin: "https://ca.linkedin.com/in/xuchen-wu-243b9b251",
+    },
+  },
+  {
     name: "Kathleen Miao",
     title: "PhD student (Silvana Pesenti)",
     since: 2021,
-    image: "",
+    image: "/utstat-math-finance/assets/members/KathleenMiao.jpg",
     bio: "Mathematical problems in insurance and risk management, dependence uncertainty, and robustness.",
     links: {
       email: "k.miao@mail.utoronto.ca",
@@ -52,7 +65,7 @@ export const facultyStudentsData: FacultyMember[] = [
     name: "Elijah French",
     title: "PhD student (Sebastian Jaimungal & Leonard Wong)",
     since: 2024,
-    image: "",
+    image: "/utstat-math-finance/assets/members/ElijahFrench.jpg",
     bio: "Mean-field games.",
     links: {
       email: "elijah.french@mail.utoronto.ca",
@@ -64,7 +77,7 @@ export const facultyStudentsData: FacultyMember[] = [
     name: "Mathew Cater",
     title: "PhD student (Sebastian Jaimungal)",
     since: 2024,
-    image: "",
+    image: "/utstat-math-finance/assets/members/MathewCater.png",
     bio: "",
     links: {
       linkedin: "https://ca.linkedin.com/in/mathew-cater-benavides",
