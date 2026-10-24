@@ -66,7 +66,7 @@ export const facultyStudentsData: FacultyMember[] = [
     title: "PhD student (Sebastian Jaimungal & Leonard Wong)",
     since: 2024,
     image: "/utstat-math-finance/assets/members/ElijahFrench.jpg",
-    bio: "Mean-field games.",
+    bio: "Mean-field games and complex systems in finance.",
     links: {
       email: "elijah.french@mail.utoronto.ca",
       website: "https://elijahfrench.com/",
@@ -152,10 +152,12 @@ export const facultyStudentsData: FacultyMember[] = [
     name: "Isaac Marchand",
     title: "PhD student (Xiaofei Shi & Christopher Blier-Wong)",
     since: 2026,
-    image: "",
-    bio: "",
+    image: "/utstat-math-finance/assets/members/IsaacMarchand.jpg",
+    bio: "Generative modelling of climate risk.",
     links: {
       email: "isaac.marchand@mail.utoronto.ca",
+      googleScholar: "https://scholar.google.ca/citations?hl=en&user=cXNcuI8AAAAJ",
+      linkedin: "https://www.linkedin.com/in/imarchand",
     },
   },
 ];
