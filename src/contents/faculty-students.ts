@@ -53,7 +53,7 @@ export const facultyStudentsData: FacultyMember[] = [
     title: "PhD student (Silvana Pesenti)",
     since: 2023,
     image: "https://brandon-tam.github.io//images/Convocation%20-%20Individual%20Photo.jpg",
-    bio: "Multivariate uncertainty sets and distributionally robust optimization.",
+    bio: "Distributionally robust optimization and risk sharing.",
     links: {
       email: "brandontam.tam@mail.utoronto.ca",
       website: "https://brandon-tam.github.io/",
