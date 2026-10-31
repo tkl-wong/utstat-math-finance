@@ -8,11 +8,11 @@ export function PublicationList({
   groupedByYear,
 }: PublicationListProps) {
   return (
-    <div className="space-y-10">
+    <div className="space-y-6">
       {groupedByYear.map(([year, publications]) => (
         <div key={year}>
-          <h3 className="mb-4 text-xl font-bold text-gray-900">{year}</h3>
-          <div className="space-y-3">
+          <h3 className="mb-3 text-xl font-bold text-gray-900">{year}</h3>
+          <div className="space-y-2">
             {publications.map((pub) => (
               <Publication key={pub.id} publication={pub} />
             ))}

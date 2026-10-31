@@ -2,9 +2,9 @@ import { pastMembersData } from "@/contents/past-members";
 
 const PastMembers = () => {
   return (
-    <section className="border-t border-gray-200/70 py-16" id="past-members">
+    <section className="border-t border-gray-200/70 py-8" id="past-members">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="mx-auto mb-10 max-w-3xl text-center">
+        <div className="mx-auto mb-6 max-w-3xl text-center">
           <h2 className="mb-4 text-4xl font-bold text-gray-900 dark:text-white">
             Past Members
           </h2>
@@ -14,7 +14,7 @@ const PastMembers = () => {
         </div>
 
         {pastMembersData.length > 0 && (
-          <ul className="mx-auto grid max-w-5xl list-disc gap-x-12 gap-y-5 pl-6 marker:text-brand md:grid-cols-2">
+          <ul className="mx-auto grid max-w-5xl list-disc gap-x-8 gap-y-3 pl-6 marker:text-brand md:grid-cols-2">
             {pastMembersData.map((member) => {
               const profileUrl =
                 member.links.website ??

@@ -5,13 +5,13 @@ import Link from "next/link";
 
 export default function PeoplePage() {
   return (
-    <main className="min-h-screen bg-gray-50 pt-16">
-      <section className="border-b border-gray-200/70 bg-white px-6 py-16 text-center lg:py-20">
+    <main className="min-h-screen bg-gray-50">
+      <section className="border-b border-gray-200/70 bg-white px-6 py-8 text-center lg:py-10">
         <div className="mx-auto max-w-3xl">
           <h1 className="text-5xl font-bold tracking-tight text-gray-900">
             People
           </h1>
-          <p className="mt-5 text-lg leading-relaxed text-gray-600">
+          <p className="mt-3 text-lg leading-relaxed text-gray-600">
             Faculty, postdoctoral researchers, and students in the University of
             Toronto Mathematical Finance group.
           </p>
@@ -21,8 +21,8 @@ export default function PeoplePage() {
       <FacultyGrid />
       <FacultyStudentsGrid />
 
-      <section className="px-4 pb-20 sm:px-6" aria-labelledby="join-our-group-heading">
-        <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-6 rounded-2xl bg-brand px-8 py-10 text-center text-white shadow-sm sm:flex-row sm:text-left">
+      <section className="px-4 pb-8 sm:px-6" aria-labelledby="join-our-group-heading">
+        <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 rounded-2xl bg-brand px-6 py-6 text-center text-white shadow-sm sm:flex-row sm:text-left">
           <div>
             <h2 id="join-our-group-heading" className="text-2xl font-bold">
               Join our group

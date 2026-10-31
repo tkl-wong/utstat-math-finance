@@ -63,9 +63,9 @@ export function PhotoGallery({ gallery }: PhotoGalleryProps) {
     selectedIndex === null ? null : gallery.photos[selectedIndex];
 
   return (
-    <section className="bg-white py-16" aria-labelledby={titleId}>
+    <section className="bg-white py-8" aria-labelledby={titleId}>
       <div className="container mx-auto px-6">
-        <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-10">
+        <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
           <div className="max-w-3xl">
             <h2
               id={titleId}
@@ -82,7 +82,7 @@ export function PhotoGallery({ gallery }: PhotoGalleryProps) {
           <p className="shrink-0 text-base text-gray-600">{gallery.details}</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {gallery.photos.map((photo, index) => (
             <button
               type="button"

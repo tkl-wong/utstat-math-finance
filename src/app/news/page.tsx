@@ -8,7 +8,7 @@ export default function Blog() {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Header Section */}
-      <section className="relative mb-8 overflow-hidden py-16">
+      <section className="relative mb-4 overflow-hidden py-8 lg:py-10">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-brand/[0.07] to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-800 to-transparent" />
@@ -16,10 +16,10 @@ export default function Blog() {
 
         <div className="container mx-auto px-6 relative">
           <div className="text-center max-w-2xl mx-auto">
-            <div className="mb-5 inline-flex h-14 w-14 rotate-12 items-center justify-center rounded-2xl bg-brand/10 text-brand transition-transform duration-300 hover:rotate-0">
+            <div className="mb-4 inline-flex h-12 w-12 rotate-12 items-center justify-center rounded-xl bg-brand/10 text-brand transition-transform duration-300 hover:rotate-0">
               <NewspaperIcon className="w-8 h-8" />
             </div>
-            <h1 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
+            <h1 className="mb-3 text-4xl font-bold text-gray-900 md:text-5xl">
               News and Updates
             </h1>
             <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-400">
@@ -30,8 +30,8 @@ export default function Blog() {
       </section>
 
       {/* Posts Section */}
-      <section className="container mx-auto mb-16 px-6">
-        <div className="max-w-2xl mx-auto">
+      <section className="container mx-auto mb-8 px-6">
+        <div className="max-w-4xl mx-auto">
           <div className="divide-y divide-gray-200/50 dark:divide-gray-800/50">
             {posts.map((post, index) => (
               <div

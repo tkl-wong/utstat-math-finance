@@ -13,7 +13,7 @@ export function PostHeader({ title, coverImage, date }: Props) {
   return (
     <div className="relative max-w-5xl mx-auto">
       {/* Back Button */}
-      <div className="mb-8">
+      <div className="mb-5">
         <Link 
           href="/news" 
           className="inline-flex items-center text-gray-600 hover:text-brand transition-colors duration-300"
@@ -24,8 +24,8 @@ export function PostHeader({ title, coverImage, date }: Props) {
       </div>
 
       {/* Title and Meta */}
-      <div className="text-center mb-12">
-        <h1 className="mb-6 text-4xl font-bold leading-tight text-gray-900 md:text-5xl lg:text-6xl">
+      <div className="text-center mb-6">
+        <h1 className="mb-4 text-4xl font-bold leading-tight text-gray-900 md:text-5xl lg:text-6xl">
           {title}
         </h1>
         
@@ -36,7 +36,7 @@ export function PostHeader({ title, coverImage, date }: Props) {
       </div>
 
       {/* Cover Image */}
-      <div className="relative aspect-video mb-12 rounded-2xl overflow-hidden shadow-2xl">
+      <div className="relative aspect-video mb-6 rounded-2xl overflow-hidden shadow-2xl">
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 to-transparent z-10" />
         <Image
           src={coverImage}

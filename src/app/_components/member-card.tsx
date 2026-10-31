@@ -67,7 +67,7 @@ export const MemberCard = ({ member, variant = 'faculty' }: { member: FacultyMem
           <button
             type="button"
             onClick={() => setIsProfileOpen(true)}
-            className="group/image relative aspect-[3/4] w-full overflow-hidden text-left"
+            className="group/image relative aspect-[3/4] w-full shrink-0 overflow-hidden bg-gray-100 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-brand"
             aria-label={`View profile details for ${member.name}`}
           >
             <div className="absolute inset-0">
@@ -90,32 +90,23 @@ export const MemberCard = ({ member, variant = 'faculty' }: { member: FacultyMem
                   {initials}
                 </div>
               )}
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-              <div className="absolute inset-0 bg-black/0 transition-colors group-hover/image:bg-black/10" />
-              
-              {/* Content Overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <div className="space-y-2">
-                  <span className="text-sm font-medium text-white/90">
-                    {member.title}
-                  </span>
-                  <h3 className="text-xl font-bold text-white">
-                    {member.name}
-                  </h3>
-                </div>
-              </div>
             </div>
           </button>
 
           {/* Content Section */}
-          <div className="flex-1 flex flex-col p-6">
-            <p className="flex-1 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+          <div className="flex-1 flex flex-col p-5">
+            <h3 className="text-xl font-bold text-gray-900">
+              {member.name}
+            </h3>
+            <p className="mt-1 text-sm font-medium text-gray-600">
+              {member.title}
+            </p>
+            <p className="mt-3 flex-1 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
               {member.bio}
             </p>
 
             {/* Contact Links */}
-            <div className="mt-5 pt-5 border-t border-gray-100 dark:border-gray-800/80">
+            <div className="mt-3 pt-3 border-t border-gray-100 dark:border-gray-800/80">
               <div className="flex flex-wrap items-center gap-1.5">
                 {member.links.email && (
                   <a
@@ -193,7 +184,7 @@ export const MemberCard = ({ member, variant = 'faculty' }: { member: FacultyMem
             </button>
 
             <div className="grid md:grid-cols-[360px_1fr]">
-              <div className="relative aspect-[3/4] overflow-hidden bg-gray-100 md:aspect-auto md:min-h-[480px]">
+              <div className="relative aspect-[3/4] self-start overflow-hidden bg-gray-100">
                 {hasImage ? (
                   <Image
                     src={member.image}
@@ -212,7 +203,6 @@ export const MemberCard = ({ member, variant = 'faculty' }: { member: FacultyMem
                     {initials}
                   </div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
               </div>
 
               <div className="p-7 sm:p-9">
@@ -321,8 +311,8 @@ export const MemberCard = ({ member, variant = 'faculty' }: { member: FacultyMem
         hover:shadow-lg hover:shadow-gray-100/20 dark:hover:shadow-black/20
         h-full
       ">
-        <div className="p-6 h-full flex">
-          <div className="flex gap-5 h-full">
+        <div className="p-4 h-full flex flex-col">
+          <div className="flex gap-3">
             {/* Avatar */}
             <div className="relative w-[72px] h-[72px] rounded-lg overflow-hidden flex-shrink-0">
               {hasImage ? (
@@ -348,7 +338,7 @@ export const MemberCard = ({ member, variant = 'faculty' }: { member: FacultyMem
 
             {/* Content */}
             <div className="flex-1 min-w-0 flex flex-col">
-              <div className="flex items-start justify-between gap-4">
+              <div className="flex flex-col items-start gap-2">
                 <div>
                   <h3 className="text-base font-semibold text-gray-900 dark:text-white">
                     {member.name}
@@ -364,7 +354,7 @@ export const MemberCard = ({ member, variant = 'faculty' }: { member: FacultyMem
                 </div>
 
                 {/* Contact Icons */}
-                <div className="flex gap-1 flex-shrink-0">
+                <div className="flex flex-wrap gap-1">
                   {member.links.email && (
                     <a
                       href={`mailto:${member.links.email}`}
@@ -420,12 +410,13 @@ export const MemberCard = ({ member, variant = 'faculty' }: { member: FacultyMem
                 </div>
               </div>
 
-              {/* Bio */}
-              <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 line-clamp-2 leading-relaxed">
-                {member.bio}
-              </p>
             </div>
           </div>
+          {member.bio && (
+            <p className="mt-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+              {member.bio}
+            </p>
+          )}
         </div>
       </div>
     </div>

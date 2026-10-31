@@ -20,12 +20,12 @@ export function VideoShowcase({ videos }: VideoShowcaseProps) {
   const [selectedVideo, setSelectedVideo] = useState<Video | null>(null);
 
   return (
-    <section className="py-24 bg-gray-50/50">
+    <section className="py-8 lg:py-10 bg-gray-50/50">
       <a className="anchor" id="media"></a>
       
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
+        <div className="max-w-3xl mx-auto text-center mb-6 space-y-3">
           <h2 className="text-4xl font-bold tracking-tight text-gray-900">
             Featured Videos
           </h2>
@@ -35,7 +35,7 @@ export function VideoShowcase({ videos }: VideoShowcaseProps) {
         </div>
 
         {/* Video List */}
-        <div className="mx-auto max-w-5xl space-y-6">
+        <div className="mx-auto max-w-5xl space-y-4">
           {videos.map((video) => (
             <button
               type="button"
@@ -57,14 +57,14 @@ export function VideoShowcase({ videos }: VideoShowcaseProps) {
                 </div>
               </div>
 
-              <div className="flex flex-col justify-center p-6 md:p-8">
-                <h3 className="mb-3 text-2xl font-semibold tracking-tight text-gray-900">
+              <div className="flex flex-col justify-center p-5">
+                <h3 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
                   {video.title}
                 </h3>
                 <p className="text-base leading-relaxed text-gray-600">
                   {video.description}
                 </p>
-                <span className="mt-5 inline-flex items-center gap-2 font-medium text-brand">
+                <span className="mt-3 inline-flex items-center gap-2 font-medium text-brand">
                   <PlayIcon className="h-4 w-4" />
                   Watch video
                 </span>

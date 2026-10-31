@@ -101,7 +101,7 @@ const Header = () => {
       {/* Mobile Menu - Separate from header for proper z-index stacking */}
       <div
         className={cn(
-          "fixed inset-0 z-[60] lg:hidden",
+          "fixed inset-0 z-[60] overflow-hidden lg:hidden",
           mobileMenuOpen ? "visible" : "invisible"
         )}
       >

@@ -28,7 +28,7 @@ const FAQItem = ({ question, answer, bullets, link }: FAQItemProps) => {
     >
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full px-6 py-5 flex justify-between items-center gap-4"
+        className="w-full px-5 py-4 flex justify-between items-center gap-4"
       >
         <h3 className="text-lg font-medium text-left text-gray-900 group-hover:text-brand transition-colors">
           {question}
@@ -70,7 +70,7 @@ const FAQItem = ({ question, answer, bullets, link }: FAQItemProps) => {
 // FAQ Category Component
 const FAQCategory = ({ title, items }: FAQCategoryProps) => {
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
       <div className="flex items-center gap-3">
         <div className="h-8 w-1 bg-brand rounded-full"></div>
         <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
@@ -93,10 +93,10 @@ const FAQCategory = ({ title, items }: FAQCategoryProps) => {
 // Main FAQ Page Component
 const FAQPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
+    <div className="min-h-screen bg-gray-50 py-8">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
-        <div className="text-center mb-16 space-y-6">
+        <div className="text-center mb-6 space-y-3">
           <h1 className="text-5xl font-bold text-gray-900 bg-clip-text">
             Frequently Asked Questions
           </h1>
@@ -107,7 +107,7 @@ const FAQPage = () => {
         </div>
 
         {/* FAQ Content */}
-        <div className="space-y-12">
+        <div className="space-y-6">
           {faqsData.map((category) => (
             <FAQCategory
               key={category.category}

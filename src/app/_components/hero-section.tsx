@@ -10,7 +10,7 @@ const foregroundImagePath = heroContent.foregroundImage.imagePath;
 export const HeroSection = () => {
   return (
     <section
-      className="hero-section relative min-h-[68vh] overflow-hidden bg-fixed bg-cover"
+      className="hero-section relative overflow-hidden bg-fixed bg-cover"
       style={{
         backgroundImage: `url(${backgroundImagePath})`,
         backgroundPosition: "center 145%",
@@ -21,7 +21,7 @@ export const HeroSection = () => {
       {/* Content */}
       <div className="relative h-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
-          <div className="grid h-full items-center gap-10 py-8 lg:grid-cols-2">
+          <div className="grid h-full items-center gap-8 py-8 lg:grid-cols-2 lg:py-10">
             {/* Left Column - Text Content */}
             <div className="animate-fade-in space-y-5 text-white">
               <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">

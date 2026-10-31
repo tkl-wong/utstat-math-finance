@@ -10,7 +10,7 @@ export function PostBody({ content }: Props) {
       {/* Content */}
       <div className="prose prose-lg dark:prose-invert max-w-none
         prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-white
-        prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
+        prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4
         prose-p:text-gray-600 dark:prose-p:text-gray-300 prose-p:leading-relaxed
         prose-a:text-brand hover:prose-a:text-brand/80 prose-a:no-underline
         prose-strong:text-gray-900 dark:prose-strong:text-white

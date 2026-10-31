@@ -4,11 +4,11 @@ import { researchAreasContent } from '@/contents/research-areas';
 
 export function ResearchAreasSection() {
   return (
-    <section id="research-areas" className="relative overflow-hidden py-12">
+    <section id="research-areas" className="relative overflow-hidden py-8">
       <div className="container relative mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section header with animations */}
-          <div className="mb-8 text-center">
+          <div className="mb-5 text-center">
             <h2 className="animate-fade-in text-4xl font-bold text-gray-900 md:text-5xl">
               {researchAreasContent.header.title}
             </h2>
@@ -20,7 +20,7 @@ export function ResearchAreasSection() {
           </div>
 
           {/* Animated line separator */}
-          <div className="relative mx-auto mb-8 h-px w-full max-w-3xl overflow-hidden">
+          <div className="relative mx-auto mb-3 h-px w-full max-w-3xl overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-brand/50 to-transparent animate-shimmer" />
           </div>
 

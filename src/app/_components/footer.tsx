@@ -2,13 +2,14 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="container flex flex-col items-center justify-between gap-6 p-4 text-gray-900 md:flex-row">
-      <aside className="flex items-center gap-4">
+    <footer className="container flex flex-col items-center justify-between gap-4 p-4 text-gray-900 md:flex-row">
+      <aside className="flex flex-col items-center gap-3 text-center text-sm sm:flex-row sm:text-left">
         <Image
           src="https://sgsu-uoft.github.io/ResearchDay2022/dept_logo.png"
           alt="logo"
           width={300}
           height={300}
+          className="h-auto w-48 max-w-full"
         />
         <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
       </aside>

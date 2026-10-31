@@ -11,7 +11,7 @@ export function MoreStories({ posts }: Props) {
   return (
     <section className="mt-4">
       <a className="anchor" id="headlines"></a>
-      <div className="mb-6 flex items-center justify-between">
+      <div className="mb-3 flex items-center justify-between">
         <h2 className="text-4xl font-bold leading-tight tracking-tight md:text-5xl">
           News
         </h2>
@@ -23,7 +23,7 @@ export function MoreStories({ posts }: Props) {
           <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
         </Link>
       </div>
-      <div className="mb-16 grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+      <div className="mb-8 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}
