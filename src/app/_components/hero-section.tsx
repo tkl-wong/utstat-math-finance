@@ -10,14 +10,13 @@ const foregroundImagePath = heroContent.foregroundImage.imagePath;
 export const HeroSection = () => {
   return (
     <section
-      className="relative min-h-[68vh] overflow-hidden bg-fixed bg-cover"
+      className="hero-section relative min-h-[68vh] overflow-hidden bg-fixed bg-cover"
       style={{
         backgroundImage: `url(${backgroundImagePath})`,
         backgroundPosition: "center 145%",
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/70 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-r from-brand/40 via-transparent to-transparent backdrop-blur-sm" />
+      <div aria-hidden="true" className="hero-overlay absolute inset-0 backdrop-blur-sm" />
 
       {/* Content */}
       <div className="relative h-full">
@@ -29,7 +28,7 @@ export const HeroSection = () => {
                 <span className="inline-block animate-slide-up text-white">
                   {heroContent.title.main}
                 </span>
-                <span className="mt-2 block animate-slide-up-delayed text-accent drop-shadow-lg">
+                <span className="mt-2 block animate-slide-up-delayed text-sky-300 drop-shadow-lg">
                   {heroContent.title.highlight}
                 </span>
               </h1>

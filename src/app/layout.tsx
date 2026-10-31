@@ -16,6 +16,8 @@ export const metadata: Metadata = {
   description: `The Math Finance program at UTStat is a unique program that combines the study of mathematics and finance.`,
 };
 
+const faviconPath = "/favicon";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -24,36 +26,37 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" type="image/svg+xml" href={`${faviconPath}/favicon.svg?v=mf1`} />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/favicon/apple-touch-icon.png"
+          href={`${faviconPath}/apple-touch-icon.png?v=mf1`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon/favicon-32x32.png"
+          href={`${faviconPath}/favicon-32x32.png?v=mf1`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon/favicon-16x16.png"
+          href={`${faviconPath}/favicon-16x16.png?v=mf1`}
         />
-        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <link rel="manifest" href={`${faviconPath}/site.webmanifest`} />
         <link
           rel="mask-icon"
-          href="/favicon/safari-pinned-tab.svg"
-          color="#000000"
+          href={`${faviconPath}/safari-pinned-tab.svg?v=mf1`}
+          color="#1e3765"
         />
-        <link rel="shortcut icon" href="/favicon/favicon.ico" />
-        <meta name="msapplication-TileColor" content="#000000" />
+        <link rel="shortcut icon" href={`${faviconPath}/favicon.ico?v=mf1`} />
+        <meta name="msapplication-TileColor" content="#1e3765" />
         <meta
           name="msapplication-config"
-          content="/favicon/browserconfig.xml"
+          content={`${faviconPath}/browserconfig.xml`}
         />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#1e3765" />
         <script
           dangerouslySetInnerHTML={{
             __html: `

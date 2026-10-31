@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>U Toronto Mathematical Finance</title>
+  <rect width="64" height="64" rx="12" fill="#1e3765"/>
+  <path fill="#fff" d="M9 46V18h7l6 13 6-13h7v28h-7V31l-6 12-6-12v15Zm30-28h18v6H46v5h9v6h-9v11h-7Z"/>
+</svg>
