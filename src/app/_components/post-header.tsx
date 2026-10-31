@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { imagePath } from "@/lib/image-path";
 import DateFormatter from "./date-formatter";
 import { CalendarIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
@@ -40,7 +39,7 @@ export function PostHeader({ title, coverImage, date }: Props) {
       <div className="relative aspect-video mb-12 rounded-2xl overflow-hidden shadow-2xl">
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 to-transparent z-10" />
         <Image
-          src={imagePath(coverImage)}
+          src={coverImage}
           alt={`Cover Image for ${title}`}
           fill
           className="object-cover"

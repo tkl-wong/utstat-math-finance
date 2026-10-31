@@ -1,7 +1,6 @@
 import cn from "classnames";
 import Link from "next/link";
 import Image from "next/image";
-import { imagePath } from "@/lib/image-path";
 
 type Props = {
   title: string;
@@ -12,7 +11,7 @@ type Props = {
 const CoverImage = ({ title, src, slug }: Props) => {
   const image = (
     <Image
-      src={imagePath(src)}
+      src={src}
       alt={`Cover Image for ${title}`}
       className={cn("shadow-sm w-full", {
         "hover:shadow-lg transition-shadow duration-200": slug,
@@ -24,7 +23,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
   return (
     <div className="sm:mx-0">
       {slug ? (
-        <Link href={`/posts/${slug}`} aria-label={title}>
+        <Link href={`/news/${slug}`} aria-label={title}>
           {image}
         </Link>
       ) : (

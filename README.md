@@ -12,7 +12,7 @@ This project leverages **Next.js**'s [Static Site Generation (SSG)](https://next
 - **TypeScript Support**: Ensures type safety and better developer experience.
 - **Static Export**: The blog is exported as a static site using Next.js's `export` functionality.
 - **Responsive Design**: Styled with [Tailwind CSS](https://tailwindcss.com).
-- **Configurable Base Path**: Can be deployed under custom paths, such as `/utstat-math-finance`.
+- **Custom Domain Deployment**: Uses root-relative routes and assets for `https://mathfin.statistics.utoronto.ca/`.
 - **Unoptimized Images**: Simplifies static export without relying on external image optimization services.
 
 ---
@@ -89,21 +89,9 @@ yarn export
 
 The static files will be located in the `out` directory.
 
-### Base Path Configuration
+### Custom Domain Paths
 
-The `next.config.js` file is preconfigured to support deployment under a custom base path, such as `/utstat-math-finance`. Modify this as needed:
-
-```ts
-const nextConfig = {
-  basePath: "/utstat-math-finance",
-  output: "export",
-  images: {
-    unoptimized: true,
-  },
-};
-
-export default nextConfig;
-```
+The site is hosted at the root of its custom domain. Keep internal links and public asset paths root-relative (for example, `/people` and `/assets/...`); do not prefix them with the GitHub repository name.
 
 ---
 

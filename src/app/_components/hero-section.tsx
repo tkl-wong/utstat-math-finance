@@ -2,11 +2,10 @@ import React from "react";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
-import { imagePath } from "@/lib/image-path";
 import { heroContent } from "@/contents/hero";
 
-const backgroundImagePath = imagePath(heroContent.background.imagePath);
-const foregroundImagePath = imagePath(heroContent.foregroundImage.imagePath);
+const backgroundImagePath = heroContent.background.imagePath;
+const foregroundImagePath = heroContent.foregroundImage.imagePath;
 
 export const HeroSection = () => {
   return (

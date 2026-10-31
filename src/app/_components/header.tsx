@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import cn from "classnames";
 import Link from "next/link";
-import { BASE_PATH } from "@/lib/constants";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -62,7 +61,7 @@ const Header = () => {
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-8">
               <nav className="flex items-center space-x-6">
-                <NavLink href={`${BASE_PATH}/#about-us`} dimmed={scrolled} isAnchor>About</NavLink>
+                <NavLink href="/#about-us" dimmed={scrolled} isAnchor>About</NavLink>
                 <NavLink href="/people" dimmed={scrolled}>People</NavLink>
                 <NavLink href="/publications" dimmed={scrolled}>Recent Publications</NavLink>
                 <NavLink href="/news" dimmed={scrolled}>News</NavLink>
@@ -138,7 +137,7 @@ const Header = () => {
             </div>
 
             <nav className="flex-1 overflow-y-auto p-5 space-y-1 bg-white">
-              <MobileNavLink href={`${BASE_PATH}/#about-us`} onClick={() => setMobileMenuOpen(false)} isAnchor>About</MobileNavLink>
+              <MobileNavLink href="/#about-us" onClick={() => setMobileMenuOpen(false)} isAnchor>About</MobileNavLink>
               <MobileNavLink href="/people" onClick={() => setMobileMenuOpen(false)}>People</MobileNavLink>
               <MobileNavLink href="/publications" onClick={() => setMobileMenuOpen(false)}>Recent Publications</MobileNavLink>
               <MobileNavLink href="/news" onClick={() => setMobileMenuOpen(false)}>News</MobileNavLink>
