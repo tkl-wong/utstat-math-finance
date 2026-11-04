@@ -77,10 +77,11 @@ export const facultyStudentsData: FacultyMember[] = [
     name: "Mathew Cater",
     title: "PhD student (Sebastian Jaimungal)",
     since: 2024,
-    image: "/assets/members/MathewCater.png",
-    bio: "",
+    image: "/assets/members/MathewCater.jpg",
+    imagePosition: "center 40%",
+    bio: "Robust Algorithmic Market Making",
     links: {
-      linkedin: "https://ca.linkedin.com/in/mathew-cater-benavides",
+      linkedin: "https://www.linkedin.com/in/mathew-cater-benavides/",
     },
   },
   {
